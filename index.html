@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Uploader</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="container">
+
+        <!-- !  COVER PHOTO SECTION------ -->
+        <div class="cover_photo">
+            <input type="file" onchange="coverUp(event)" name="cp_uploder" id="cp_uploader" accept="image/*" style="display: none;">
+            <label class="m_label" for="cp_uploader"><i class="fas fa-upload"></i></label>
+            <img class="cp-img">
+        </div>
+
+                <!-- !  PROFILE PHOTO SECTION------ -->
+        <div class="profile_photo">
+            <input type="file" onchange="profileUp(event)"  name="dp_uploder" id="dp_uploader" accept="image/*" style="display: none;" >
+            <label class="m_label" for="dp_uploader"><i class="fas fa-upload"></i></label>
+            <img class="dp-img">
+        </div>
+
+                <!-- !  NAMING & SELECTION SECTION------ -->
+        <div class="name">
+            <h1>MD Shazzadul Islam shakib</h1>
+            
+
+                    <!-- !  SELECTOR SECTION------ -->
+            <button class="btn upload">Upload</button>
+            <button class=" btn confirm">Confirm</button>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modalMain">
+            <h1>Do you want to confirm upload?</h1>
+            <button class="yes">Yes</button>
+            <button class="no">No</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

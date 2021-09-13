@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background: #283e3f;
+    text-align: center;
+    position: relative;
+    .cover_photo{
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 40%;
+        width: 45%;
+        margin: auto;
+        label{
+            position: absolute;
+            font-size: 2rem;
+            color: #354624;
+            z-index: 1;
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+        img{
+            border: 2px solid black;
+            height: 100%;
+            width: 100%;
+            background: #fff;
+            z-index: 0;
+            background-position: center;
+            background-size: initial;
+            background-repeat: no-repeat;
+        }
+    }
+    .profile_photo{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        margin: -100px auto;;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: relative;
+        label{
+            font-size: 1.5rem;
+            color: #354624;
+            z-index: 4;
+            padding-bottom: 10px;
+        }
+        img{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: #fff;
+            border-radius: 50%;
+            border: 2px solid black;
+            outline: none;
+            z-index: 3;
+            background-position: center;
+            background-size: initial;
+            background-repeat: no-repeat;
+        }
+    }
+    .name{
+        margin-top: 160px;
+        color: #fff;
+        font-size: 2.1rem;
+    }
+    .btn{
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        padding: 10px 15px;
+    
+    }
+    .confirm{
+        display: none;
+    }
+    
+   .footer{
+       height: 100vh;
+       width: 100%;
+       background-color: #283e3f;
+   }
+}
+    .m_label{
+            display: none;
+        }
+
+        // !----------MODAL PART-------
+.modal{
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 5;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    .modalMain{
+        height: 200px;
+        width: 300px;
+        background: #a07070;
+        text-align: center;
+        padding-top: 40px;
+        color: #0b5317;
+        button{
+            padding: 6px 24px;
+            margin: 30px 10px;
+            background: #5e4545;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+        }
+    }
+}

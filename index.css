@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: #283e3f;
+  text-align: center;
+  position: relative;
+}
+
+.container .cover_photo {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 40%;
+  width: 45%;
+  margin: auto;
+}
+
+.container .cover_photo label {
+  position: absolute;
+  font-size: 2rem;
+  color: #354624;
+  z-index: 1;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.container .cover_photo img {
+  border: 2px solid black;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  z-index: 0;
+  background-position: center;
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+
+.container .profile_photo {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin: -100px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+.container .profile_photo label {
+  font-size: 1.5rem;
+  color: #354624;
+  z-index: 4;
+  padding-bottom: 10px;
+}
+
+.container .profile_photo img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid black;
+  outline: none;
+  z-index: 3;
+  background-position: center;
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+
+.container .name {
+  margin-top: 160px;
+  color: #fff;
+  font-size: 2.1rem;
+}
+
+.container .btn {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px 15px;
+}
+
+.container .confirm {
+  display: none;
+}
+
+.container .footer {
+  height: 100vh;
+  width: 100%;
+  background-color: #283e3f;
+}
+
+.m_label {
+  display: none;
+}
+
+.modal {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  right: 0;
+  position: fixed;
+  z-index: 5;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .modalMain {
+  height: 200px;
+  width: 300px;
+  background: #a07070;
+  text-align: center;
+  padding-top: 40px;
+  color: #0b5317;
+}
+
+.modal .modalMain button {
+  padding: 6px 24px;
+  margin: 30px 10px;
+  background: #5e4545;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+/*# sourceMappingURL=index.css.map */
